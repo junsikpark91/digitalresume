@@ -1,0 +1,666 @@
+/*============= RESET STYLE =============
+FONTS:
+Body: font-family: 'Roboto', sans-serif;
+Nav: font-family: 'Pacifico', cursive;
+*/
+
+/*-- iPhone X Remove Gutters
+Ignore W3C Validation error for this style. --*/
+html {
+  padding: env(safe-area-inset);
+}
+
+/*-- Body Resets --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  color: #616971;
+}
+
+/*-- Option: Add Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*-- Remove Blue Browser Outline Around Buttons in Chrome --*/
+a:focus,
+button:focus {
+  outline: 0 !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+/*-- Pointer Cursor On Links & Buttons --*/
+a, .btn, button {
+  cursor: pointer!important;
+  transition: all 0.5s ease 0s;
+}
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+  height: 4.4rem;
+  margin-top: -4.4rem;
+  content: "";
+  display: block;
+}
+
+/*============= BANNER =============*/
+
+.bg-resume {
+  background-color: rgba(230, 239, 240, 0.8);
+}
+.text-aqua {
+  color: #00b4ba;
+}
+.text-red {
+  color: #E9666A;
+}
+/*-- Button --*/
+.btn-lg {
+  border-width: thin;
+  border-radius: 0;
+  padding: .8rem 1.2rem;
+  font-size: .9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 1rem;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .1);
+}
+.btn-red {
+  border-color: #E9666A; /*-- ba3c4b EF8588 --*/
+  background-color: #E9666A;
+  color: white;
+}
+.btn-red:hover,
+.btn-red:focus {
+  border-color: #E9666A!important;
+  background-color: white;
+  color: black;
+}
+.btn-red:hover,
+.btn-red:focus {
+  border-color: white;
+  background-color: white;
+  color: black;
+}
+/*-- Banner Image --*/
+.banner-img {
+  max-height: 23rem!important;
+  border-radius: 50%!important;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .1);
+}
+img {
+  max-width: 100%;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar {
+  background: rgba(230, 239, 240, .8);
+  padding: .9rem .5rem;
+}
+.cursive {
+  font-family: 'Pacifico', cursive;
+}
+.svg-inline--fa.fa-w-14 {
+  color: #343A40;
+  font-size: 1.6rem;
+}
+.navbar-nav .nav-link {
+  color: #343A40;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #E9666A!important;
+}
+@media (min-width: 992px) {
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/*============= ABOUT =============*/
+
+.title-underline {
+  margin: 1rem auto 1.5rem;
+  width: 5rem;
+  height: .2rem;
+  background-color: #00b4ba;
+}
+.about .svg-inline--fa {
+  color: #E9666A;
+  font-size: 1.15rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+.about p {
+  font-size: .95rem;
+}
+.about span {
+  color: #616971;
+  text-transform: none;
+}
+.about span a {
+  color: #616971;
+  text-decoration: none;
+}
+
+/*-- About Progress Bar --*/
+.progressbar-start p {
+  margin: 0;
+  padding: 0;
+}
+.percentCount {
+  margin-top: -2.4rem!important;
+}
+.progressbar {
+  margin-bottom: 1rem!important;
+}
+
+/*===== FIRST FIXED BACKGROUND IMG =====*/
+
+/*--- iOS Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999!important;
+}
+#fixed {
+  background-image: url('../img/whitebg.webp');
+  z-index: -1;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.first-fixed {
+  background-color: rgba(0, 0, 0, .1);
+  z-index: 1000!important;
+}
+.bg-clear {
+  background-color: rgba(255, 255, 255, .5);
+}
+
+/*===== SECOND FIXED BACKGROUND IMG =====*/
+
+#fixed2 {
+  background-image: url('../img/whitebg.webp');
+  z-index: -1;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.second-fixed {
+  background-color: rgba(0, 0, 0, .2);
+  z-index: 1000!important;
+}
+
+/*===== EXPERIENCE =====*/
+
+.title-underline-left {
+  margin: 1rem 0 1.5rem;
+  width: 3rem;
+  height: .15rem;
+  background-color: #00b4ba;
+}
+
+/*-- Red Date Circle --*/
+.history-circle {
+  background-color: #E9666A;
+  border-radius: 50%;
+  border: .2rem solid #F8F9FA;
+  min-height: 11rem;
+  max-height: 11rem;
+  min-width: 11rem;
+  max-width: 11rem;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .1);
+}
+.history-circle h5 {
+  text-align: center;
+  color: white;
+  line-height: 1.8rem;
+}
+.border {
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .1);
+}
+
+/*-- Circle Progress --*/
+.circle {
+  margin: 1rem auto;
+}
+.circle canvas {
+  background-color: #00b4ba;
+  border-radius: 50%;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .15);
+}
+.circle strong {
+  font-size: 2.2rem;
+  color: white;
+  margin: auto;
+  position: absolute;
+  top: 2rem; left: 0; bottom: 0; right: 0;
+  padding-left: .5rem;
+  z-index: 1;
+}
+.circle strong i {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+/*============= PORTFOLIO GALLERY FILTER / LIGHTBOX =============*/
+
+/*-- Project Gallery Menu --*/
+.gallery {
+  width: 100%!important;
+}
+.navbar.projects {
+  min-height: 1rem;
+  letter-spacing: .05rem;
+}
+.filter ul li {
+  padding: .5rem;
+}
+.filter ul li.filter-active a.nav-link.filter,
+a.filter.is-checked,
+li a.nav-link.filter.active,
+li a.nav-link.filter:hover {
+  background-color: #00b4ba!important;
+  color: #fff!important;
+  cursor: pointer!important;
+}
+a.nav-link.filter {
+  padding-left: 1rem;
+}
+
+/*-- Project Gallery Layout --*/
+.element-item {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 14rem;
+  padding: .6rem;
+}
+
+.element-item p {
+  width: 100%;
+  margin-bottom: 1.5rem!important;
+  height: auto;
+  display:block;
+  left: 50%;
+  margin-right: 50%;
+  transform:translate(50%,0%);
+  transition: all 0.3s ease 0s;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .2);
+}
+
+.element-item img {
+  width: 100%;
+  margin-bottom: 1.5rem!important;
+  height: auto;
+  display:block;
+  left: 50%;
+  margin-right: 50%;
+  transform:translate(50%,0%);
+  transition: all 0.3s ease 0s;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .2);
+}
+.element-item a img:hover {
+  opacity: .7!important;
+  transition: all 0.3s ease 0s;
+}
+
+/*============= REFERENCES =============*/
+
+#references-carousel img {
+  margin: 0 auto!important;
+}
+#references-carousel .owl-carousel .owl-nav {
+  position: absolute;
+  top: 45%;
+  min-width: 100%!important;
+  max-width: 100%!important;
+}
+#references-carousel .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: 0!important;
+  padding: .4rem 1rem!important;
+  border: .1rem solid black;
+  font-size: 1.3rem!important;
+  color: black;
+  opacity: .7;
+}
+#references-carousel .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: 0!important;
+  padding: .4rem 1rem!important;
+  border: .1rem solid black;
+  font-size: 1.3rem!important;
+  color: black;
+  opacity: .7;
+}
+#references-carousel .owl-carousel .owl-nav button.owl-prev:hover,
+#references-carousel .owl-carousel .owl-nav button.owl-next:hover {
+  color: white;
+  background-color: black;
+}
+
+/*-- References Image --*/
+.owl-carousel .owl-item img {
+  max-width: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  transition: all 0.8s ease 0s;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .1);
+}
+.references img:hover {
+  transform: scale(1.1);
+}
+
+/*============= FOOTER =============*/
+
+footer {
+  background-color: #5b6166;
+}
+footer .cursive {
+  margin-bottom: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+ul.social {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.social li {
+  display: inline;
+  padding-right: .6rem;
+}
+footer .social a:hover {
+  color: #00b4ba;
+  text-decoration: none;
+}
+footer .svg-inline--fa.fa-w-14 {
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+footer svg.svg-inline--fa:hover {
+  color: #00b4ba!important;
+}
+
+/*--- Contact Form --*/
+.form-group {
+  margin-bottom: 1.3rem;
+}
+.form-control {
+  background-color: #676e73;
+  border-radius: 0;
+  border: .15rem solid #737b80;
+  color: white!important;
+  font-size: 1.1rem;
+}
+.form-control:focus {
+  background: #676e73;
+  border: .15rem solid #93979b;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b2b5b8!important;
+}
+input.btn {
+  cursor: pointer;
+}
+.controls input:focus,
+.controls textarea:focus { /*-- Remove Element Outlines in Contact Form --*/
+  outline: 0 !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+/*============= SOCKET =============*/
+
+.socket {
+  background-color: #43474b;
+  width: 100%;
+}
+.socket a {
+  color: white;
+}
+
+/*============= TOP SCROLL =============*/
+
+.top-scroll svg.svg-inline--fa {
+  font-size: 3rem;
+  height: 1.7rem;
+  color: #53595f;
+  background: white;
+}
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: .3;
+  z-index: 1000;
+  display: none;
+}
+a.top-scroll:hover {
+  opacity: .5;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1200px (xl) */
+@media (max-width: 1199.98px) {
+  .element-item {
+    min-height: 12rem;
+  }
+}
+
+/* Devices under 992px (lg) */
+@media (max-width: 991.98px) {
+  .btn-lg {
+    padding: .6rem .8rem!important;
+    font-size: .9rem;
+    margin: .4rem!important;
+  }
+  .navbar {
+    padding: .4rem 1rem;
+  }
+  /*--- Nav Scrolling Offset --*/
+  .offset:before {
+    height: 3.95rem;
+    margin-top: -3.95rem;
+  }
+  .hidden-circle-lg {
+    display: none;
+  }
+  .element-item {
+    width: 50%;
+    min-height: 12.6rem;
+  }
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+  .navbar.projects .navbar-toggler {
+    width: 100%;
+  }
+  .navbar.projects .custom-toggler-icon {
+    float: left;
+    padding-right: 2rem;
+  }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.7rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.3rem; }
+  h5 { font-size: 1.2rem; }
+  h6 { font-size: 1.1rem; }
+  p { font-size: 1.1rem; }
+  /*--- Nav Scrolling Offset --*/
+  .offset:before {
+    height: 3.5rem;
+    margin-top: -3.5rem;
+  }
+  .btn-lg {
+    padding: .5rem .7rem!important;
+    font-size: .9rem;
+    margin: .4rem!important;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-img {
+    max-height: 18rem!important;
+  }
+  .history-circle {
+    margin-bottom: -1rem!important;
+    z-index: 9999!important;
+  }
+  .hidden-circle-md {
+    display: none;
+  }
+  .element-item {
+    width: 100%;
+    min-height: 14rem;
+  }
+  #references-carousel .owl-carousel .owl-nav button.owl-prev {
+    left: -1rem!important;
+  }
+  #references-carousel .owl-carousel .owl-nav button.owl-next {
+    right: -1rem!important;
+  }
+  .top-scroll {
+    display: none!important;
+  }
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*============= WAYPOINTS =============*/
+
+/*-- OPTION: TURN OFF ANIMATION OFF COMPLETELY::
+Note: may effect line progress bar with slight delay,
+line-progressbar waypoints can be adjusted at bottom of plugins.js.--*/
+
+
+/* remove this CSS comment to activate
+
+.animated, .os-animation {
+  -webkit-animation: none!important;
+  -moz-animation: none!important;
+  -o-animation: none!important;
+  animation: none!important;
+  opacity: 1!important;
+  -webkit-animation-delay: none !important;
+  -moz-animation-delay: none !important;
+  animation-delay: none !important;
+  }
+
+*/
+
+/*-- OPTION: TURN OFF ANIMATION ON MOBILE::
+Note: may effect line progress bar with slight delay,
+line-progressbar waypoints can be adjusted at bottom of plugins.js.--*/
+
+
+/* remove this CSS comment to activate
+
+@media (max-width: 767px) {
+	.animated, .os-animation {
+	  -webkit-animation: none!important;
+	  -moz-animation: none!important;
+	  -o-animation: none!important;
+	  animation: none!important;
+	  opacity: 1!important;
+	  -webkit-animation-delay: none !important;
+	  -moz-animation-delay: none !important;
+	  animation-delay: none !important;
+	  }
+	}
+
+*/
+
+
+/*--- Prevent WayPoints from Browser Window Scrolling On Mobile --*/
+/* Devices under 768px (md) */
+@media (max-width: 767px) {
+  .row {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+
+/*-- Don't modify waypoints CSS below,
+this is required for waypoints/animation to work --*/
+.os-animation{
+  opacity: 0;
+  margin: 0!important;
+  max-width: 100%;
+}
+.os-animation.animated {
+  opacity: 1;
+}
+
+
+/*--- Fix for Potential Navbar Jumping During Scroll --*/
+.fixed-top  {
+  -webkit-backface-visibility: hidden; /*-- Ignore Validation --*/
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+}
