@@ -555,7 +555,7 @@ a.top-scroll:hover {
     display: none;
   }
   .element-item {
-    width: 100%;
+    width: 50%;
     min-height: 14rem;
   }
   #references-carousel .owl-carousel .owl-nav button.owl-prev {
