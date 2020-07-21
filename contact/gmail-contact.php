@@ -3,9 +3,9 @@
 /*
 THIS FILE USES PHPMAILER INSTEAD OF THE PHP MAIL() FUNCTION
 */
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+use PHPMailer-master/PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer-master/PHPMailer\PHPMailer\SMTP;
+use PHPMailer-master/PHPMailer\PHPMailer\Exception;
 
 // Load Composer's autoloader
 
